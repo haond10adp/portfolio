@@ -1,0 +1,120 @@
+/* custom typography */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,500,600,700|Roboto:400,700&display=swap&subset=vietnamese');
+
+body {
+    font-family: Roboto, sans-serif;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: .4em;
+}
+
+@media screen and (min-width: 960px) {
+    body {
+        font-size: 1.1rem;
+    }
+}
+
+h1,
+h2 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: medium;
+}
+
+/* header */
+header h1 {
+    margin-top: .4em;
+    letter-spacing: 3px;
+}
+
+header p {
+    color: #696969;
+}
+
+/* main */
+
+main section h2, h3 {
+    margin-top: .6em;
+    margin-bottom: .2em;
+}
+
+main section ul li {
+    line-height: 1.57;
+}
+
+section.qualifications li {
+    list-style-type: square;
+    margin-left: 3em;
+}
+
+section.programs li {
+    list-style-type: disc;
+    margin-left: 3em;
+}
+
+
+/* footer */
+footer {
+    margin-top: 3em;
+}
+
+footer ul li {
+    margin-bottom: .6em;
+    margin-left: 1em;
+}
+
+a[href^="skype"]::before {
+    content: url("https://img.icons8.com/cute-clipart/20/000000/skype.png");
+}
+
+a[href^="mailto"]::before {
+    content: "📧 ";
+}
+
+a[href^="tel"]::before {
+    content: "📞 ";
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 480px) {
+    .modal-content img {
+        width: 100vw;
+    }
+}
+
+
+.close-button {
+    float: right;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
