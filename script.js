@@ -15,4 +15,4 @@ function windowOnClick(event) {
 
 trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
-document.addEventListener("click", windowOnClick);
+window.addEventListener("click", windowOnClick);
