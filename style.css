@@ -77,12 +77,10 @@ footer ul li:last-child {
 
 footer ul li img {
     height: 2em;
-    filter: contrast(5);
 }
 
 a[href^="skype"]::before {
     content: url("https://img.icons8.com/cute-clipart/20/000000/skype.png");
-    filter: contrast(1.5);
 }
 
 a[href^="mailto"]::before {
