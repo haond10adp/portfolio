@@ -1,4 +1,14 @@
 /* Common CSS reset */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 
 body {
   max-width: 1440px;
@@ -13,9 +23,9 @@ body {
 
 li {
   list-style-type: none;
-  margin-left: 3em;
 }
 
-p {
+p,
+li {
   line-height: 1.57;
 }
